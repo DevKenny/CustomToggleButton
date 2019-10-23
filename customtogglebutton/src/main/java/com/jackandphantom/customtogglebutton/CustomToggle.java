@@ -53,7 +53,7 @@ public class CustomToggle extends View {
    private RectF rectF = new RectF();
 
    private float left , top, right, bottom;
-   private OnToggleClickListener onToggleClickListener;
+   private onToggListener;
    private AnimatorSet animatorSet = new AnimatorSet();
 
    /*
@@ -270,7 +270,7 @@ public class CustomToggle extends View {
     }
 
     /* Interface for Checking which side of button  is enabled */
-    interface OnToggleClickListener {
+    public interface OnToggleClickListener {
         void onLefToggleEnabled(boolean enabled);
         void onRightToggleEnabled(boolean enabled);
     }
